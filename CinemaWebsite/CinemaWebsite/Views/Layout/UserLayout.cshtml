@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/UserCSSLayout/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/UserCSSLayout/style.css" rel="stylesheet" />
+    <script src="~/Content/UserCSSLayout/jquery.min.js"></script>
+
+</head>
+<body>
+    @RenderBody()
+    <!-- header-section-starts -->
+    <div class="full">
+        <div class="menu">
+            <ul>
+                <li><a class="active" href="#"><i class="home"></i></a></li>
+                <li><a href="#"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+                <li><a href="#"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
+                <li><a href="#"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
+                <li><a href="#"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="main">
+            <div class="header">
+                <div class="top-header">
+                    <div class="logo">
+                        <a href="index.html"><img src="~/Content/UserCSSLayout/images/logo.png" alt="" /></a>
+                        <p>Movie Theater</p>
+                    </div>
+                    <div class="DangNhapDangKy" id="divDangNhapDangKy">
+                        <a href="#"><div class="login">Đăng Nhập</div></a>
+                        <a href="#"><div class="regis">Đăng Ký</div></a>
+                    </div>
+                </div>
+                @Html.Action("HeaderInfoPartial", "Home")
+            </div>
+            </div>
+
+
+
+            @*@<div class="review-slider">
+                <ul id="flexiselDemo1">
+                    <li><img src="~/Content/UserCSSLayout/images/r1.jpg" alt="" /></li>
+                    <li><img src="~/Content/UserCSSLayout/images/r2.jpg" alt="" /></li>
+                    <li><img src="~/Content/UserCSSLayout/images/r3.jpg" alt="" /></li>
+                    <li><img src="~/Content/UserCSSLayout/images/r4.jpg" alt="" /></li>
+                    <li><img src="~/Content/UserCSSLayout/images/r5.jpg" alt="" /></li>
+                    <li><img src="~/Content/UserCSSLayout/images/r6.jpg" alt="" /></li>
+                </ul>
+                <script type="text/javascript">
+                    $(window).load(function () {
+
+                        $("#flexiselDemo1").flexisel({
+                            visibleItems: 6,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: false,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 2
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 3
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 4
+                                }
+                            }
+                        });
+                    });
+                </script>
+
+                <script src="~/Content/UserCSSLayout/jquery.flexisel.js"></script>
+            </div>        
+         *@
+</body>
+</html>
